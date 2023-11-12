@@ -1,5 +1,5 @@
 caesar = input("Please enter a senctence: ")
-dressing = int(input("enter shift: "))
+dressing = 5
 
 salad = ""
 for char in caesar:
