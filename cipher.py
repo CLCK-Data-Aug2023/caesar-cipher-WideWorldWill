@@ -1,4 +1,4 @@
-caesar = input("enter message: ")
+caesar = input("Please enter a sentence:")
 dressing = 5
 
 salad = ""
@@ -14,4 +14,4 @@ for char in caesar:
   else:
     salad += char
 salad=salad.lower()
-print("The encrypted sentence is: ",salad)
+print("The encrypted sentence is:",salad)
