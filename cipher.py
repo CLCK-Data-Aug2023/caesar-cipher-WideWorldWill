@@ -14,4 +14,4 @@ for char in caesar:
   else:
     salad += char
 salad=salad.lower()
-print("The encrypted sentence is ",salad)
+print("The encrypted sentence is: ",salad)
