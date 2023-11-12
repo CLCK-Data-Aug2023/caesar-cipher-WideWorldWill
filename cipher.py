@@ -13,4 +13,4 @@ for char in caesar:
     salad += new_char
   else:
     salad += char
-print("The encrypted sentence is: ",salad)
+print("The encrypted sentence is: ", salad)
