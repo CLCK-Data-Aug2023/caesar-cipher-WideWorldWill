@@ -5,7 +5,7 @@ salad = ""
 for char in caesar:
   if char.isalpha():
     ascii_code = ord(char)
-    if ascii_code >= 65 and ascii_code <= 90:
+    if ascii_code >= 33 and ascii_code <= 90:
       new_ascii_code = (ascii_code + dressing) % 91
     else:
       new_ascii_code = (ascii_code + dressing) % 123
