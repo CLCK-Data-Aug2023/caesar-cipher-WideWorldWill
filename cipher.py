@@ -1,14 +1,16 @@
-caesar = input("enter message:")
-dressing = int(input("enter key:"))
+caesar = input("enter message: ")
+dressing = int(input("enter shift: "))
+
 salad = ""
-for i in range(len(caesar)):
-  #Using ascii to convert characters into their numerical equivalents
-  ascii = ord(caesar[i])
-  if ascii >= 32 and ascii <= 122:
-    #using chr to convert ascii number back to it's character equivalent
-    salad += chr((ascii + dressing - 65) % 26 + 65)
-  elif ascii >= 97 and ascii <= 122:
-    salad += chr((ascii + dressing - 97) % 26 + 97)
+for char in caesar:
+  if char.isalpha():
+    ascii_code = ord(char)
+    if ascii_code >= 65 and ascii_code <= 90:
+      new_ascii_code = (ascii_code + dressing) % 91
+    else:
+      new_ascii_code = (ascii_code + dressing) % 123
+    new_char = chr(new_ascii_code)
+    salad += new_char
   else:
-    salad += caesar[i]
-print(salad)# add your code here
+    salad += char
+print(salad)
