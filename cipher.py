@@ -1,17 +1,16 @@
-caesar = input("Please enter a sentence:")
-dressing = 5
+message = input("Please enter a sentence: ")
+shift = 5
 
-salad = ""
-for char in caesar:
-  if char.isalpha():
-    ascii_code = ord(char)
-    if ascii_code >= 33 and ascii_code <= 90:
-      new_ascii_code = (ascii_code + dressing) % 91
-    else:
-      new_ascii_code = (ascii_code + dressing) % 123
-    new_char = chr(new_ascii_code)
-    salad += new_char
+encrypted_message = ""
+alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+for char in message:
+  if char in alphabet:
+    index = alphabet.index(char)
+    new_index = (index + shift) % len(alphabet)
+    new_char = alphabet[new_index]
+    encrypted_message += new_char
   else:
-    salad += char
-salad=salad.lower()
-print("The encrypted sentence is:",salad)
+    encrypted_message += char
+encrypted_message=encrypted_message.lower()
+print("The encrypted sentence is:", encrypted_message)
