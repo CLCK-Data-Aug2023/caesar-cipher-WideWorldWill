@@ -1,7 +1,7 @@
-message = input("Please enter a sentence: ")
-shift = 5
+caesar = input("Please enter a sentence: ")
+dressing = 5
 
-encrypted_message = ""
+salad = ""
 alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 for char in message:
@@ -9,8 +9,8 @@ for char in message:
     index = alphabet.index(char)
     new_index = (index + shift) % len(alphabet)
     new_char = alphabet[new_index]
-    encrypted_message += new_char
+    salad += new_char
   else:
     encrypted_message += char
-encrypted_message=encrypted_message.lower()
-print("The encrypted sentence is:", encrypted_message)
+salad=salad.lower()
+print("The encrypted sentence is:", salad)
