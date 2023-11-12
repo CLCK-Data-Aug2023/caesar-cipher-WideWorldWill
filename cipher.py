@@ -1,5 +1,5 @@
 caesar = input("enter message:")
-dressing = int(input("enter Key:"))
+dressing = int(input("enter key:"))
 salad = ""
 for i in range(len(caesar)):
   #Using ascii to convert characters into their numerical equivalents
