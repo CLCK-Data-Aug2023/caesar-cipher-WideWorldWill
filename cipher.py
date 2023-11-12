@@ -1,4 +1,4 @@
-caesar = input("enter message: ")
+caesar = input("Please enter a senctence: ")
 dressing = int(input("enter shift: "))
 
 salad = ""
@@ -13,4 +13,4 @@ for char in caesar:
     salad += new_char
   else:
     salad += char
-print(salad)
+print("The encrypted sentence is: ",salad)
