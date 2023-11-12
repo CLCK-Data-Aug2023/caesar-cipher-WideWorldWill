@@ -7,7 +7,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for char in caesar:
   if char in alphabet:
     index = alphabet.index(char)
-    new_index = (index + shift) % len(alphabet)
+    new_index = (index + dressing) % len(alphabet)
     new_char = alphabet[new_index]
     salad += new_char
   else:
