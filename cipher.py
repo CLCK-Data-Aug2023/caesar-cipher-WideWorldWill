@@ -1,6 +1,6 @@
 caesar = input("enter message:")
 dressing = 5
-
+caesar=caesar(lower)
 salad = ""
 words = caesar.split() # Split the input message into words
 
